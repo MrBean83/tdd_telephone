@@ -36,4 +36,10 @@ describe Task do
     end
   end
 
+  describe "#created_at" do
+    it "should return the datetime the task was created" do
+      task.created_at.should be_an_instance_of(DateTime)
+    end
+  end
+
 end
