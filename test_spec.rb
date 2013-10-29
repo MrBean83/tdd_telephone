@@ -15,7 +15,17 @@ describe List do
     it "requires a title argument" do
       expect {List.new}.to raise_error(ArgumentError)
     end
+  end
 
+  describe "#title" do
+    it "gives the title of the list" do
+      list.title.should eq('Hankaconda')
+    end
+  end
 
+  describe "#description" do
+    it "gives a description for the list" do
+      list.description.should
+    end
   end
 end
