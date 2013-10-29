@@ -23,9 +23,4 @@ describe List do
     end
   end
 
-  describe "#description" do
-    it "gives a description for the list" do
-      list.description.should
-    end
-  end
 end
