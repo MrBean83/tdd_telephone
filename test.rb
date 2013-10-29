@@ -1,7 +1,7 @@
 class List
 
-
-  def initialize
+  def initialize(title)
+  @title = title
 
 
   end

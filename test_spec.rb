@@ -2,9 +2,11 @@ require  "rspec"
 
 require_relative "test"
 
-let(:list) { List.new("Hankaconda")}
 
 describe List do
+
+  let(:list) { List.new("Hankaconda")}
+
   describe "#initialize" do
     it "should create an instance of List" do
       list.should be_an_instance_of List
