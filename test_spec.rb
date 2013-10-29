@@ -1,6 +1,6 @@
 require  "rspec"
 
-require_relative "list"
+require_relative "test"
 
 describe List do
   describe "#initialize" do
