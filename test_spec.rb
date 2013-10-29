@@ -3,23 +3,36 @@ require  "rspec"
 require_relative "test"
 
 
-describe List do
+describe Task do
 
-  let(:list) { List.new("Hankaconda")}
+  let(:task) { Task.new("Hankaconda")}
 
   describe "#initialize" do
-    it "should create an instance of List" do
-      list.should be_an_instance_of List
+    it "should create an instance of Task" do
+      task.should be_an_instance_of Task
     end
 
     it "requires a title argument" do
-      expect {List.new}.to raise_error(ArgumentError)
+      expect {Task.new}.to raise_error(ArgumentError)
     end
+
   end
 
   describe "#title" do
-    it "gives the title of the list" do
-      list.title.should eq('Hankaconda')
+    it "gives the title of the task" do
+      task.title.should eq('Hankaconda')
+    end
+  end
+
+  describe "#description" do
+    it "gives the description of the task" do
+      task.description.should eq(nil)
+    end
+  end
+
+  describe "#status" do
+    it "should default as incomplete" do
+      task.status.should eq("incomplete")
     end
   end
 
